@@ -1,40 +1,106 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
-    background: hsl(43, 100%, 57%);
+
+body {
+    background: hsl(43, 23%, 73%);
     height: 100vh;
 }
-.container{
-    border: 1px solid black;
+
+.container {
     height: 100vh;
     width: 95%;
-    margin: auto; 
+    margin: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
-.calculator{
-    border: 1px solid aqua;
-    background: rgb(163, 53, 53);
+
+.amount {
+    background: rgb(165, 153, 153);
     width: 400px;
     margin: auto;
     padding: 0 25px;
+    box-shadow: 2px 2px 4px 2px rgb(214, 204, 204);
 }
-.calculator input{
-    background: rgb(53, 163, 71);
+
+.title {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.itemElement {
+    text-align: center;
+    position: relative;
+}
+
+.hTitle {
+    margin: 10px;
+    text-align: left;
+}
+
+.icon {
+    border: none;
+    position: absolute;
+    background-color: rgb(226, 217, 217);
+}
+
+.amount input {
     box-sizing: border-box;
-    width: 90%;
+    width: 95%;
     padding: 8px;
     outline: none;
+    border: none;
+    padding-left: 30px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
-.calculator button{
-    width: 10%;
+
+.amount button {
     outline: none;
     padding: 8px;
     border-top-right-radius: 0;
     border-top-right-radius: 0;
+}
+
+select {
+    width: 95%;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+
+.calculate {
+    text-align: center;
+}
+
+.calculate button {
+    margin: 10px 0;
+    outline: none;
+    border: none;
+}
+
+.answerBlockWrapper {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    animation: ani 1s forwards;
+}
+
+@keyframes ani {
+    0% {
+        bottom: -10%;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+.answerBlock {
+    background: rgb(153, 164, 165);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
 }

@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Amount</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-   <div class="container">
-        <div class="calculator">
-            <h1 class="title">Tip Calculator</h1>
-            <div class="hTitle">Bill Amount</div>
-            <button class="icon">
-                <i class="fas fa-dollar-sign"></i>
-            </button>
-            <input id="sum" type="number">
-            <div class="hTitle">Number of Guests</div>
-            <button class="icon">
-                <i class="fas fa-male"></i>
-            </button>            
-            <input id="mens" type="number">
-            <div class="hTitle">Service Quality</div>
-            <select name="" id="procent">
-                <option selected value="0" disabled>..Choose</option>
-                <option value="30">30%</option>
-                <option value="20">20%</option>
-                <option value="10">10%</option>
-                <option value="5">5%</option>
-            </select>
-            <br>
-            <button id="calculate" class="calculate">Calculate</button>
-        </div>
-   </div>
 
-    <script src="js/main.js"></script>
+<body>
+    <div class="container">
+        <div class="amount">
+            <h1 class="title">Amount</h1>
+            <div class="itemElement">
+                <div class="hTitle">Bill Amount</div>
+                <button class="icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </button>
+                <input id="sum" type="number">
+            </div>
+            <div class="itemElement">
+                <div class="hTitle">Number of Guests</div>
+                <button class="icon">
+                    <i class="fas fa-male"></i>
+                </button>
+                <input id="mens" type="number">
+            </div>
+            <div class="itemElement">
+                <div class="hTitle">Service Quality</div>
+                <select name="" id="procent">
+                    <option selected value="0" disabled>..Choose</option>
+                    <option value="30">30%</option>
+                    <option value="20">20%</option>
+                    <option value="10">10%</option>
+                    <option value="5">5%</option>
+                </select>
+            </div>
+            <div class="calculate">
+                <button id="calculate">Calculate</button>
+            </div>
+
+        </div>
+        <div class="answerBlockWrapper">
+            
+        </div>  
+    </div>
+
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
