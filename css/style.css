@@ -101,6 +101,6 @@ select {
 .answerBlock {
     background: rgb(153, 164, 165);
     width: 300px;
-    padding: 20px;
+    padding: 10px 0px;
     text-align: center;
 }
